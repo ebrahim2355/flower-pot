@@ -490,4 +490,10 @@ footer{
         flex-direction: column;
         padding-left: 20px;
     }
+    .fourth-footer{
+        margin-bottom: 50px;
+    }
+    .footer-description{
+        margin-bottom: 20px;
+    }
 }
