@@ -312,6 +312,7 @@ footer{
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 16px;
+    max-width: 360px;
 }
 .second-footer a, .third-footer a{
     display: block;
