@@ -195,16 +195,32 @@ header nav {
     background-image: url(../assets/deal-zabo.png);
     grid-area: single3;
 }
-.off{
+
+.off {
     font-weight: bold;
     font-size: 20px;
     color: #FFFFFF;
     background-color: transparent;
-    
+
 }
-.shop-now{
+
+.off2 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.shop-now {
     font-size: 16px;
     font-weight: 600;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.shop-now2 {
+    font-size: 28px;
+    font-weight: 500;
     color: #FFFFFF;
     background-color: transparent;
 }
@@ -222,7 +238,7 @@ header nav {
 .single3 {
     background-size: cover;
     background-position: center;
-    border-radius: 12px; 
+    border-radius: 12px;
     min-height: 140px;
     display: flex;
     flex-direction: column;
@@ -231,21 +247,54 @@ header nav {
     position: relative;
     overflow: hidden;
 }
+
 .single1::before,
 .single2::before,
 .single3::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 12px;
-  z-index: 0;
-}
-.off, .shop-now{
-    position: relative;
-    
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 12px;
+    z-index: 0;
 }
 
+.off,
+.shop-now,
+.off2,
+.shop-now2 {
+    position: relative;
+
+}
+.fourth-section{
+    position: relative;
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 120px;
+}
+.fourth-section-header{
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-bottom: 23px;
+}
+.fourth-section-input-field{
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.input-email{
+    border: none;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15.5px 20px;
+    width: 250%;
+}
 
 
 
@@ -352,22 +401,53 @@ header nav {
         padding-bottom: 16px;
     }
 
-    .third-section-header{
+    .third-section-header {
         font-size: 24px;
         font-weight: bold;
         margin-top: 143px;
         margin-bottom: 16px;
     }
-    .third-section-description{
+
+    .third-section-description {
         font-size: 14px;
         margin-bottom: 52px;
         padding-right: 25px;
         padding-left: 25px;
     }
 
-    .third-section-images{
+    .third-section-images {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "single1" "single2" "single3";
-        column-gap: 20px;
+        /* column-gap: 20px; */
+    }
+
+    .off2 {
+        font-weight: bold;
+        font-size: 20px;
+        color: #FFFFFF;
+        background-color: transparent;
+    }
+
+    .shop-now2 {
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFFFFF;
+        background-color: transparent;
+    }
+
+    .fourth-section-header{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .fourth-section-input-field{
+        width: 150%;
+        margin: 0 10px;
+        margin: 0 -25%;
+    }
+    .fourth-section{
+        margin-top: 40px;
+    }
+    .input-email{
+        width: 200%;
     }
 }
