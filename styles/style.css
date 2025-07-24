@@ -49,38 +49,78 @@ header nav {
 }
 
 
-.banner{
+.banner {
     display: flex;
     /* grid-template-columns: repeat(2, 1fr); */
     align-items: last baseline;
     max-width: 1140px;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-weight: bold;
     font-size: 4em;
     margin-bottom: 13px;
 }
-.banner-description{
+
+.banner-description {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.first-section{
+.first-section {
     text-align: center;
+    max-width: 1140px;
+    margin: 0 auto;
 }
-.first-section-header{
+
+.first-section-header {
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 16px;
     margin-top: 120px;
 
 }
-.first-section-description{
+
+.first-section-description {
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
 }
 
+.flower-name {
+    color: #111111;
+    font-size: 22px;
+    font-weight: 550;
+    margin-top: 30px;
+}
+
+.flower-price {
+    color: #111111;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.primary-btn {
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #E95A08;
+    padding: 19px;
+    width: 100%;
+}
+
+.single-img-section {
+    max-width: 270px;
+}
+
+.img-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
 
 
@@ -107,19 +147,54 @@ header nav {
         display: none;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         /* width: 100%; */
     }
-    .banner-title{
+
+    .banner-title {
         font-size: 24px;
     }
-    .banner img{
+
+    .banner img {
         width: 100%;
         margin-bottom: 28px;
+
+    }
+
+    .banner>div {
+        padding: 15px;
+    }
+
+    .img-section {
+        grid-template-columns: repeat(2, 1fr);
         
     }
-    .banner > div{
+
+    .single-img-section img {
+        width: 100%;
+    }
+
+    .first-section {
+        max-width: 544px;
         padding: 15px;
+    }
+
+    .first-section-header {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 65px;
+    }
+
+    .first-section-description {
+        font-size: 14px;
+    }
+    .flower-price{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .flower-name{
+        font-size: 16px;
+        
     }
 }
