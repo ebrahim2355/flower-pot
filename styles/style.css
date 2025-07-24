@@ -484,4 +484,10 @@ footer{
     .input-email{
         width: 200%;
     }
+
+
+    footer{
+        flex-direction: column;
+        padding-left: 20px;
+    }
 }
