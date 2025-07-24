@@ -297,6 +297,40 @@ header nav {
 }
 
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.first-footer img{
+    width: 135px;
+    height: 82px;
+}
+.footer-description{
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 16px;
+}
+.second-footer a, .third-footer a{
+    display: block;
+    color: gray;
+    text-decoration: none;
+    padding-bottom: 32px;
+}
+.fourth-footer{
+    display: flex;
+    justify-content: first baseline;
+    gap: 24px;
+}
+.fourth-footer img{
+    width: 36px;
+    height: 36px;
+}
+
+
+
 
 
 @media screen and (max-width:574px) {
