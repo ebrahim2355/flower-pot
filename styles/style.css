@@ -110,10 +110,11 @@ header nav {
     background-color: #E95A08;
     padding: 19px;
     width: 100%;
+    cursor: pointer;
 }
 
 .single-img-section {
-    max-width: 270px;
+    max-width: 100%;
 }
 
 .img-section {
@@ -122,6 +123,44 @@ header nav {
     gap: 20px;
 }
 
+
+
+.second-section-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    gap: 60px;
+    margin: 0 auto;
+    margin-top: 210px;
+}
+
+.second-section-header {
+    font-weight: bold;
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.second-section div ul li {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
+
+.second-section div ul {
+    padding-left: 40px;
+}
+
+.trusted-badge {
+    position: absolute;
+    top: -130px;
+    left: 50%;
+    transform: translateX(-230px);
+    width: 286px;
+    z-index: 10;
+    background: none;
+}
 
 
 
@@ -168,7 +207,7 @@ header nav {
 
     .img-section {
         grid-template-columns: repeat(2, 1fr);
-        
+
     }
 
     .single-img-section img {
@@ -189,12 +228,39 @@ header nav {
     .first-section-description {
         font-size: 14px;
     }
-    .flower-price{
+
+    .flower-price {
         font-size: 16px;
-        margin-top: 10px;
+        margin-top: 5px;
+        margin-bottom: 30px;
     }
-    .flower-name{
+
+    .flower-name {
         font-size: 16px;
-        
+
+    }
+
+
+    .second-section-wrapper{
+        flex-direction: column;
+        margin-top: 42px;
+        padding: 15px;
+    }
+    .second-section-wrapper img{
+        /* padding: 15px; */
+        width: 100%;
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .second-section-header{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 18px;
+        margin-bottom: 16px;
+    }
+    .second-section div ul li{
+        font-size: 14px;
+        padding-bottom: 16px;
     }
 }
