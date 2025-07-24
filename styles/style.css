@@ -162,6 +162,90 @@ header nav {
     background: none;
 }
 
+.third-section-header {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 130px;
+    margin-bottom: 16px;
+}
+
+.third-section {
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.third-section-description {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 120px;
+}
+
+.single1 {
+    background-image: url(../assets/deal-bloom.png);
+    grid-area: single1;
+}
+
+.single2 {
+    background-image: url(../assets/deal-ana.png);
+    grid-area: single2;
+}
+
+.single3 {
+    background-image: url(../assets/deal-zabo.png);
+    grid-area: single3;
+}
+.off{
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: transparent;
+    
+}
+.shop-now{
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: transparent;
+}
+
+.third-section-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "single1 single3" "single2 single3";
+    gap: 16px;
+    padding: 20px;
+}
+
+.single1,
+.single2,
+.single3 {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px; 
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.single1::before,
+.single2::before,
+.single3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 12px;
+  z-index: 0;
+}
+.off, .shop-now{
+    position: relative;
+    
+}
+
 
 
 
@@ -241,26 +325,49 @@ header nav {
     }
 
 
-    .second-section-wrapper{
+    .second-section-wrapper {
         flex-direction: column;
         margin-top: 42px;
         padding: 15px;
     }
-    .second-section-wrapper img{
+
+    .second-section-wrapper img {
         /* padding: 15px; */
         width: 100%;
     }
-    .trusted-badge{
+
+    .trusted-badge {
         display: none;
     }
-    .second-section-header{
+
+    .second-section-header {
         font-size: 24px;
         font-weight: bold;
         margin-top: 18px;
         margin-bottom: 16px;
     }
-    .second-section div ul li{
+
+    .second-section div ul li {
         font-size: 14px;
         padding-bottom: 16px;
+    }
+
+    .third-section-header{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 143px;
+        margin-bottom: 16px;
+    }
+    .third-section-description{
+        font-size: 14px;
+        margin-bottom: 52px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .third-section-images{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "single1" "single2" "single3";
+        column-gap: 20px;
     }
 }
