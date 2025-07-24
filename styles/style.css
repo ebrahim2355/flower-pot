@@ -85,6 +85,8 @@ header nav {
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
     margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .flower-name {
@@ -113,9 +115,9 @@ header nav {
     cursor: pointer;
 }
 
-.single-img-section {
-    max-width: 100%;
-}
+.single-img-section img {
+        width: 100%;
+    }
 
 .img-section {
     display: grid;
@@ -395,6 +397,8 @@ footer{
 
     .first-section-description {
         font-size: 14px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .flower-price {
