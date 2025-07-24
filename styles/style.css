@@ -113,11 +113,16 @@ header nav {
     padding: 19px;
     width: 100%;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+.primary-btn:hover{
+    transform: scale(1.1);
+    background-color: #ff5e00;
 }
 
 .single-img-section img {
-        width: 100%;
-    }
+    width: 100%;
+}
 
 .img-section {
     display: grid;
@@ -157,8 +162,7 @@ header nav {
 .trusted-badge {
     position: absolute;
     top: -130px;
-    left: 50%;
-    transform: translateX(-230px);
+    left: 30%;
     width: 286px;
     z-index: 10;
     background: none;
@@ -268,7 +272,8 @@ header nav {
     position: relative;
 
 }
-.fourth-section{
+
+.fourth-section {
     position: relative;
     background-image: url(../assets/news-letter-bg.png);
     background-size: cover;
@@ -278,19 +283,22 @@ header nav {
     overflow: hidden;
     margin-top: 120px;
 }
-.fourth-section-header{
+
+.fourth-section-header {
     font-size: 50px;
     font-weight: bold;
     color: #FFFFFF;
     background-color: transparent;
     margin-bottom: 23px;
 }
-.fourth-section-input-field{
+
+.fourth-section-input-field {
     display: flex;
     max-width: 800px;
     margin: 0 auto;
 }
-.input-email{
+
+.input-email {
     border: none;
     font-size: 16px;
     color: rgba(0, 0, 0, 0.5);
@@ -299,39 +307,63 @@ header nav {
 }
 
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     max-width: 1100px;
     margin: 0 auto;
     padding-top: 50px;
 }
-.first-footer img{
+
+.first-footer img {
     width: 135px;
     height: 82px;
 }
-.footer-description{
+
+.footer-description {
     font-size: 22px;
     color: rgba(0, 0, 0, 0.5);
     margin-top: 16px;
     max-width: 360px;
 }
-.second-footer a, .third-footer a{
+
+.second-footer a,
+.third-footer a {
     display: block;
     color: gray;
     text-decoration: none;
     padding-bottom: 32px;
 }
-.fourth-footer{
+
+.fourth-footer {
     display: flex;
     justify-content: first baseline;
     gap: 24px;
 }
-.fourth-footer img{
+
+.fourth-footer img {
     width: 36px;
     height: 36px;
 }
 
+.trusted-badge {
+
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.trusted-badge:hover {
+    animation-play-state: paused;
+}
 
 
 
@@ -474,31 +506,36 @@ footer{
         background-color: transparent;
     }
 
-    .fourth-section-header{
+    .fourth-section-header {
         font-weight: bold;
         font-size: 20px;
     }
-    .fourth-section-input-field{
+
+    .fourth-section-input-field {
         width: 150%;
         margin: 0 10px;
         margin: 0 -25%;
     }
-    .fourth-section{
+
+    .fourth-section {
         margin-top: 40px;
     }
-    .input-email{
+
+    .input-email {
         width: 200%;
     }
 
 
-    footer{
+    footer {
         flex-direction: column;
         padding-left: 20px;
     }
-    .fourth-footer{
+
+    .fourth-footer {
         margin-bottom: 50px;
     }
-    .footer-description{
+
+    .footer-description {
         margin-bottom: 20px;
     }
 }
